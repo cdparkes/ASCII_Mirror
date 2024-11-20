@@ -12,13 +12,17 @@ public class Main {
 
     public static void main(String[] args) {
         List<String> unmodifiedList = readInput();
-        assert unmodifiedList != null;
-        String longestStringPath = findLongestStringLength(unmodifiedList);
-        List<String> modifiedList = normalizeStringsLength(unmodifiedList, longestStringPath);
+        String longestStringPath = null;
+        if (unmodifiedList != null) {
+            longestStringPath = findLongestStringLength(unmodifiedList);
 
-        List<String> reversedList = reverse(modifiedList);
+            List<String> modifiedList = normalizeStringsLength(unmodifiedList, longestStringPath);
 
-        printResults(modifiedList, reversedList);
+            List<String> reversedList = reverse(modifiedList);
+
+            printResults(modifiedList, reversedList);
+        }
+
     }
 
     private static List<String> readInput() {
