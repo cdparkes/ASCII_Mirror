@@ -1,0 +1,22 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/ASCII Mirror/*
+!/ASCII Mirror/task/
+/ASCII Mirror/task/*
+!/ASCII Mirror/task/src
+
+# Project exclude paths
+/Topics/ArrayList/Creating list/out/
+/Topics/ArrayList/Creating list/out/production/classes/
+/Topics/ArrayList/Output the list's elements/out/
+/Topics/ArrayList/Output the list's elements/out/production/classes/
